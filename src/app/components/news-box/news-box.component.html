@@ -1,0 +1,10 @@
+<div class="news-boxes">
+    <div class="news-box" *ngFor="let box of info">
+        <img [src]="box.img" alt="retro pcs">
+        <div class="details">
+            <h3>{{box.num}}</h3>
+            <h4>{{box.title}}</h4>
+            <p>{{box.descrip}}</p>
+        </div>
+    </div>
+</div>

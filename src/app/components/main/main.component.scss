@@ -1,0 +1,104 @@
+@import "../../main";
+@include basic-styles();
+
+main {
+    .main-details {
+        display: flex;
+        gap: 3rem;
+        h1 {
+            width: 100%;
+            padding-block-start: 3rem;
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: $heavy-font-weight;
+        }
+        .description {
+            width: 100%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 3rem 0;
+            p {
+                font-size: 1.35rem;
+                color: $default-font-clr;
+                line-height: 32.5px;
+            }
+            button {
+                border: none;
+                width: fit-content;
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                padding: 1em 2em;
+                letter-spacing: .25em;
+                background-color: $primary-red-clr;
+                color: $aside-bgc-clr;
+                font-weight: $heavy-font-weight;
+                transition: .2s ease;
+            }
+            button:hover {
+                background-color: $aside-bgc-clr;
+                color: $bgc-standard-clr;
+            }
+        }
+    }
+}
+
+@media (max-width: 1700px) {
+    main {
+        .main-details {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    main {
+        .main-details {
+            display: flex;
+            gap: 2rem;
+            .description {
+                p {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        .main-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .description {
+                padding: 0;
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        .main-details {
+            h1 {
+                font-size: 3rem;
+                line-height: 50px;
+            }
+            .description {
+                p {
+                    font-size: 1rem;
+                }
+                button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

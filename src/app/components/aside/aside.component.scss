@@ -1,0 +1,65 @@
+@import "../../main";
+@include basic-styles();
+
+
+aside {
+    width: 100%;
+    background-color: $aside-bgc-clr;
+    color: $bgc-standard-clr;
+    padding: 2rem;
+    h2 {
+        font-weight: $heavy-font-weight;
+        font-size: 3.5rem;
+        color: $primary-orange-clr;
+    }
+    article {
+        padding-block: 2.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        h3 {
+            font-size: 1.65rem;
+            font-weight: $mid-font-weight;
+        }
+        h3:hover {
+            cursor: pointer;
+            color: $primary-orange-clr;
+            transition: .2s ease;
+        }
+        p {
+            font-size: 1.25rem;
+            padding-block-start: .875rem;
+            line-height: 30px;
+            color: $unknown-clr;
+        }
+    }
+    article:last-child {
+        border: none;
+        padding-block-end: 1rem;
+    }
+    h2 {
+        padding-block-end: 1rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    aside {
+        h2 {
+            padding-bottom: 0;
+        }
+        article {
+            h3 {
+                font-size: 1.25rem;
+            }
+            p {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    aside {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}

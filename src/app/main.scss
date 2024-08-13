@@ -1,0 +1,40 @@
+
+@mixin basic-styles() {
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", serif;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+}
+
+        $heavy-font-weight: 800;
+        $mid-font-weight: 700;
+        $light-font-weight: 400;
+        $p-font-size: 15px;
+
+        $primary-orange-clr: hsl(35, 77%, 62%);
+        $primary-red-clr: hsl(5, 85%, 63%);
+
+        $bgc-standard-clr: hsl(36, 100%, 99%);
+        $unknown-clr: hsl(233, 8%, 79%);
+        $default-font-clr: hsl(236, 13%, 42%);
+        $aside-bgc-clr: hsl(240, 100%, 5%);

@@ -1,0 +1,62 @@
+@import "../../main";
+@include basic-styles();
+
+img {
+    height: 55px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    li {
+        font-size: 1.25rem;
+        cursor: pointer;
+        color: $default-font-clr;
+        list-style-type: none;
+        display: inline;
+    }
+    li:hover {
+        color: $primary-red-clr;
+    }
+}
+header {
+    padding-block: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ham-menu {
+    display: none;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    span {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+    }
+    span {
+        top: 30%;
+    }
+    span:nth-child(2) {
+        top: 50%;
+    }
+    span:last-child {
+        top: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        ul {
+            display: none;
+        }
+        .ham-menu {
+            display: unset;
+        }
+    }
+}

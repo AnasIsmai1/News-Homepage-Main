@@ -1,0 +1,32 @@
+
+.container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    .hero-section {
+        display: grid;
+        grid-template-columns: 65% 32%;
+        gap: 3rem;
+    }
+}
+@media (max-width:1600px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 90%;
+        .hero-section {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 95%;
+    }
+}
