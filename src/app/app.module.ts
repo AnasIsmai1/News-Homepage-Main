@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { NewsBoxComponent } from './components/news-box/news-box.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NewsBoxComponent } from './components/news-box/news-box.component';
     HeaderComponent,
     MainComponent,
     AsideComponent,
-    NewsBoxComponent
+    NewsBoxComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

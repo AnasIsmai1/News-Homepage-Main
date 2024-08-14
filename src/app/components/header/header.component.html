@@ -8,9 +8,10 @@
         <li>Trending</li>
         <li>Categories</li>
     </ul>
-    <div class="ham-menu">
+    <div [ngClass]="{'ham-menu': true, 'active': !isHidden}" (click)="openMenu()" >
         <span></span>
         <span></span>
         <span></span>
     </div>
 </header>
+<app-menu *ngIf="!isHidden"></app-menu>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isHidden: boolean = true;
+
+  openMenu() {
+    this.isHidden = (this.isHidden)? false : true;
+    console.log(this.isHidden);
+    
+  }
+
 }

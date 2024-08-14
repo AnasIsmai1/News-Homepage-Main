@@ -1,0 +1,22 @@
+.offscreen-menu {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 75%;
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: -10px 0 50px rgb(0,0,0,0.5);
+    nav {
+        margin-top: 30vh;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            li {
+                list-style-type: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
